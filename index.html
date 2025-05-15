@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест для бариста</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Начальный экран -->
+    <div id="startScreen" class="screen">
+        <h1>ну шо АЛГА??????</h1>
+        <button id="startBtn">Далее</button>
+    </div>
+
+    <!-- Таймер перед началом теста -->
+    <div id="countdownScreen" class="screen hidden">
+        <h1>Начало через:</h1>
+        <div id="countdownTimer">5</div>
+    </div>
+
+    <!-- Основной тест -->
+    <div id="quizScreen" class="screen hidden">
+        <div class="timer" id="timer">Оставшееся время: 90:00</div>
+        <div class="container">
+            <h1>Тест для бариста</h1>
+            <div id="quizContainer">
+                <div id="questionContainer"></div>
+                <button id="nextBtn" class="hidden">Далее</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Результат теста -->
+    <div id="result" class="hidden"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
